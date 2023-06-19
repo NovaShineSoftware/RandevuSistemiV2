@@ -1,0 +1,16 @@
+.card-header {
+    background-color: rgb(6, 6, 45);
+    color: #fff;
+  }
+
+  .message:nth-child(even) {
+    background-color: #7eb6ef;
+  }
+
+  .message:nth-child(odd) {
+    background-color: #e9ecef;
+  }
+
+  .card-footer {
+    background-color: #f8f9fa;
+  }
