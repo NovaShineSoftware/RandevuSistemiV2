@@ -1,0 +1,23 @@
+
+<navbar></navbar>
+<div class="container">
+<!--şubeye göre hocaları filtreleme--->
+<select  class="form-select mt-5 mx-3 " aria-label="Default select example">
+    <option selected>Şube seçiniz:</option>
+    <option *ngFor="let item of city" value="1">{{item}}</option>
+    
+  </select>
+  <!--eğitmenlr-->
+  <div class="row mt-5 mx-5">
+       <h4>EĞİTMENLERİMİZ</h4>
+       <div class="card text-white col-lg-3 p-2">
+        <img src="https://static.fotor.com/app/features/img/aiface/advance/1.png" alt="Resim" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">
+            <i class="bi bi-calendar-fill"></i> AYŞE YILMAZ
+          </h5>
+          <p class="card-text">lorem ıpsum...</p>
+        </div>
+      </div>
+      
+ </div>     

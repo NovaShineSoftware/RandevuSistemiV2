@@ -1,0 +1,39 @@
+<admin-navbar></admin-navbar>
+<div class="container mt-5">
+  <div class="form-group">
+    <label for="teacherSelect">Hoca Seç:</label>
+    <select id="teacherSelect" class="form-control" [(ngModel)]="selectedTeacher" (ngModelChange)="filterAppointments()">
+      <option value="">Hepsi</option>
+      <option *ngFor="let teacher of teachers" [value]="teacher">{{ teacher }}</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="datePicker">Tarih Seç:</label>
+    <input type="date" id="datePicker" class="form-control" [(ngModel)]="selectedDate" (ngModelChange)="filterAppointments()">
+  </div>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Öğrenci Adı</th>
+        <th scope="col">Hoca Adı</th>
+        <th scope="col">Tarih</th>
+        <th scope="col">Saat</th>
+        <th scope="col">Durum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let appointment of filteredAppointments" [ngClass]="getStatusClass(appointment.status)">
+        <td>{{ appointment.id }}</td>
+        <td>{{ appointment.studentName }}</td>
+        <td>{{ appointment.teacherName }}</td>
+        <td>{{ appointment.date }}</td>
+        <td>{{ appointment.time }}</td>
+        <td>{{ appointment.status }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+

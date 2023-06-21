@@ -1,0 +1,39 @@
+<admin-navbar></admin-navbar>
+<div class="container mt-5 table-responsive">
+    <h5>{{title}}</h5>
+    <table class="table">
+       
+      <thead>
+        <tr>
+          <th><i class=""></i>ID</th>
+          <th><i class="fas fa-user ">Ad</i></th>
+          <th><i class="fas fa-user ">Soyad</i></th>
+          <th><i class="fas fa-id-card">TC</i> </th>
+          <th><i class="fas fa-home">Adres</i></th>
+          <th><i class="fas fa-phone">Telefon</i></th>
+          <th><i class="fas fa-envelope">E-Posta</i></th>
+          <th>İşlemler</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let personel of personelListesi" > <!--personel verileri ts dosyasındaki diziden çekildi -->
+          <td>{{personel.id }}</td>
+          <td>{{ personel.ad }}</td>
+          <td>{{ personel.soyad }}</td>
+          <td>{{ personel.tc }}</td>
+          <td>{{ personel.adres }}</td>
+          <td>{{ personel.telefon }}</td>
+          <td>{{ personel.eposta }}</td>
+          <td>
+            <button class="btn btn-primary" (click)="guncellePersonel(personel.id)">
+                <i class="fas fa-edit beyaz"></i> Güncelle
+              </button>
+            <button class="btn btn-danger" (click)="silPersonel(personel.id)"><!--kullanıcı id yi buradan gönderdik-->
+              <i class="fas fa-trash-alt beyaz"></i> Sil
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

@@ -1,0 +1,62 @@
+<navbar></navbar>
+<div class="container">
+    <div class="row mt-5">
+        <h3>AKTİF RANDEVULARIM</h3>
+        <div class="card bg-light  mt-3 mb-3 mx-3" style="max-width: 18rem;">
+            <div class="card-header text-white bg-success">12.03.2023  09.00</div>
+            <div class="card-body">
+              <h5 class="card-title">Ders Adı</h5>
+              <h5 class="card-title">Hoca İsmi</h5>
+              <p class="card-text">Onaylı randevu Açıklama Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button class="bg-danger border border-danger text-white">İptal et</button>
+            </div>
+          </div>
+          <div class="card bg-light  mt-3 mb-3 mx-3" style="max-width: 18rem;">
+            <div class="card-header text-white bg-success">12.03.2023  09.00</div>
+            <div class="card-body">
+              <h5 class="card-title">Ders Adı</h5>
+              <h5 class="card-title">Hoca İsmi</h5>
+              <p class="card-text">Onaylı randevu Açıklama Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button class="bg-danger border border-danger text-white">İptal et</button>
+            </div>
+          </div>
+   
+</div>
+    <div class="row mt-5">
+
+        <h3>TÜM RANDEVULARIM</h3>
+              <!-- filtreleme--->
+                <select  class="form-select mt-5 mx-3 " aria-label="Default select example">
+                   <option selected>Randevu Tipi seçiniz:</option>
+                  <option *ngFor="let item of randevu" value="1">{{item}}</option>
+              </select>
+              <!---->
+              <div class="card bg-light  mt-3 mb-3 mx-3" style="max-width: 18rem;">
+                <div class="card-header text-white bg-success">12.03.2023  09.00</div>
+                <div class="card-body">
+                  <h5 class="card-title">Ders Adı</h5>
+                  <h5 class="card-title">Hoca İsmi</h5>
+                  <p class="card-text">Onaylı randevu Açıklama Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <button class="bg-danger border border-danger text-white">İptal et</button>
+                </div>
+              </div>
+              <div class="card bg-light  mt-3 mb-3 mx-3" style="max-width: 18rem;">
+                <div class="card-header text-white bg-warning">12.03.2023  09.00</div>
+                <div class="card-body">
+                  <h5 class="card-title">Ders Adı</h5>
+                  <h5 class="card-title">Hoca İsmi</h5>
+                  <p class="card-text">Onaylı randevu Açıklama Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <button class="bg-primary border border-primary text-white">Güncelle</button>
+                </div>
+              </div>
+              <div class="card bg-light  mt-3 mb-3 mx-3" style="max-width: 18rem;">
+                <div class="card-header text-white bg-danger">12.03.2023  09.00</div>
+                <div class="card-body">
+                  <h5 class="card-title">Ders Adı</h5>
+                  <h5 class="card-title">Hoca İsmi</h5>
+                  <p class="card-text">Onaylı randevu Açıklama Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              
+                </div>
+              </div>
+</div>
+</div>

@@ -1,0 +1,36 @@
+<admin-navbar></admin-navbar>
+
+<form class="mt-5" (submit)="submitForm()">
+    <h5>Yeni Randevu</h5>
+    <div>
+      <label for="studentName">Öğrenci Adı:</label>
+      <input type="text" id="studentName" [(ngModel)]="studentName" required>
+    </div>
+    <div>
+      <label for="date">Tarih:</label>
+      <input type="date" id="date" [(ngModel)]="date" required>
+    </div>
+    <div>
+      <label for="time">Saat:</label>
+      <input type="time" id="time" [(ngModel)]="time" required>
+    </div>
+    <div>
+      <label for="instructor">Hoca Adı:</label>
+      <select id="instructor" [(ngModel)]="instructor" required>
+        <option value="" disabled selected>Seçin</option>
+        <option value="Hoca 1">Hoca 1</option>
+        <option value="Hoca 2">Hoca 2</option>
+        <option value="Hoca 3">Hoca 3</option>
+      </select>
+    </div>
+    <div>
+        <label for="ders">Ders Adı:</label>
+        <select id="instructor" [(ngModel)]="ders" required>
+          <option value="" disabled selected>Seçin</option>
+          <option value="">ders</option>
+        
+        </select>
+      </div>
+    <button type="submit">Gönder</button>
+  </form>
+  

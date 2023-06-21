@@ -1,0 +1,94 @@
+
+<employee-navbar></employee-navbar>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-lg-3 ">
+     
+      <div class="card">
+          <img src="https://images.unsplash.com/photo-1686890121533-ac7aecfb15cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" class="card-img-top" alt="Resim Açıklaması">
+          <div class="card-body">
+            <h5 class="card-title">Profilim</h5>
+            <ul class="list-unstyled">
+              <li><i class=" text-info mx-2 fas fa-user"></i> <strong>YETKİ:</strong> Eğitmen</li>
+              <li><i class=" text-info mx-2 fas fa-user"></i> <strong>İsim:</strong> John Doe</li>
+              <li><i class="text-success mx-2 fas fa-id-card"></i> <strong>TC:</strong> 1234567890</li>
+              <li><i class="text-warning mx-2 fas fa-map-marker-alt"></i> <strong>Adres:</strong> İstanbul, Türkiye</li>
+              <li><i class="text-success mx-2 fas fa-phone"></i> <strong>Telefon:</strong> 1234567890</li>
+              <li><i class="text-primary mx-2 fas fa-envelope"></i> <strong>E-posta:</strong> john.doe@example.com</li>
+            </ul>
+            <button class="btn btn-primary animate__animated animate__heartBeat">Buton</button>
+          </div>
+        </div>
+        
+    </div>
+    <!--en son olan 5 bildirim görüntülenecek-->
+    <div class="col-lg-6">
+          <div class="card bg-info text-white">
+            <div class="card-body">
+              <h5 class="card-title">Bildirim Başlığı</h5>
+             <ul>
+              <li class="no-bullet">
+                  <div class="alert alert-success" role="alert">
+                      Başarı! İşlem başarıyla tamamlandı.
+                    </div>
+                    
+              </li>
+              <li class="no-bullet">
+                  <div class="alert alert-warning" role="alert">
+                      Uyarı! Dikkatli olun.
+                    </div>
+                    
+              </li>
+              <li class="no-bullet">
+                  <div class="alert alert-success" role="alert">
+                      Başarı! İşlem başarıyla tamamlandı.
+                    </div>
+                    
+              </li>
+              <li class="no-bullet">
+                  <!---randevu saati geldiğinde böyle bir bildirm gelecek .eğitmen ne zaman cevaplarsa-->
+    <div class="alert alert-danger" role="alert">
+      12.08.2023 09.00 randevuya ...adlı öğrenci ders saati başlamıştır.Öğrenci randevuya  geldi mi?
+  <button class="bg-success text-white mx-3 border border-light">GELDİ</button>
+  <button class="bg-danger text-white mx-3 border border-light">GELMEDİ</button>
+  </div>
+                    
+              </li>
+              <li class="no-bullet">
+                  <div class="alert alert-danger" role="alert">
+                      Hata! Bir hata oluştu.
+                    </div> 
+              </li>
+             </ul>
+             <a routerLink="/employeeBildirim">
+             <button type="button" class="btn btn-primary btn-animated mx-5">
+              <span class="btn-inner-text">Tümünü Göster</span>
+              <span class="btn-inner-icon">
+                <i class="bi bi-arrow-right"></i>
+              </span>
+            </button>
+          </a>
+            </div>
+        </div>
+    </div>
+    <!---->
+    <div class="col-lg-3">
+      <div class="row">
+          <div class="col-md-4">
+            <div class="">
+              <div class="card-body">
+                <div id="takvim" ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+   
+  </div>
+</div>
+
+
+
+

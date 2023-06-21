@@ -1,0 +1,16 @@
+<!--
+    alert-success: Başarılı işlemler için yeşil bir arka plan renk kullanır.
+alert-info: Bilgilendirme mesajları için mavi bir arka plan renk kullanır.
+alert-warning: Uyarı mesajları için sarı bir arka plan renk kullanır.
+alert-danger: Hata mesajları için kırmızı bir arka plan renk kullanır.
+-->
+<admin-navbar></admin-navbar>
+
+    <div class="container mt-5">
+        <div *ngFor="let notification of notifications" [ngClass]="getNotificationClass(notification.status)">
+          <i class="bi" [ngClass]="getNotificationIcon(notification.status)"></i> {{ notification.message }}
+        </div>
+      </div>
+      
+
+  

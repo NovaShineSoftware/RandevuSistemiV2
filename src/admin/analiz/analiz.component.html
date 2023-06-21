@@ -1,0 +1,18 @@
+<admin-navbar></admin-navbar>
+<div class="container table-responsive mt-5">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col"></th>
+          <th *ngFor="let gun of gunler" scope="col">{{ gun | date:'dd.MM.yyyy' }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let personel of personeller; let i = index">
+          <th scope="row"><i class="fas fa-user"></i>{{ personel }}</th><!--personel isimleri çekildi-->
+          <td *ngFor="let gorev of gorevler[i]" [ngClass]="{ 'empty': !gorev ,'dolu':gorev}">{{ gorev }}</td><!--boş olan günler sarı oluyor,dolu olanlar yeşil-->
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
